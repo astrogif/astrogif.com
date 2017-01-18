@@ -10,8 +10,7 @@
     "prebuild": "mkdirp build && ncp src/assets build/assets",
     "test": "npm run -s lint && npm run -s test:karma",
     "test:karma": "karma start test/karma.conf.js --single-run",
-    "lint": "eslint {src,test}",
-    "deploy": "git subtree push --prefix build origin master"
+    "lint": "eslint {src,test}"
   },
   "keywords": [
     "astrogif",
