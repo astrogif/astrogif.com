@@ -86,7 +86,7 @@ export default class Screen extends Component {
 						: <PlaceHolder /> }
 				</div>
 				{currentStep.gif
-					? <img src={currentStep.gif} className={style.gif} />
+					? <img alt={`This is a gif of a ${currentStep.text}`} src={currentStep.gif} className={style.gif} />
 					: <Cmp />}
 			</div>
 		</div>);

@@ -6,7 +6,7 @@ export default class Sampler extends Component {
 	render() {
 		return (<div className={style.sampler}>
 			<Screen />
-			<img class={style.icon} src="./assets/images/icon256.png" />
+			<img alt="AstroGif icon" class={style.icon} src="./assets/images/icon256.png" />
 		</div>);
 	}
 }
