@@ -1,7 +1,7 @@
 {
-  "name": "astrogif-pages",
+  "name": "astrogif.com",
   "version": "0.1.0",
-  "description": "Github pages for AstroGif",
+  "description": "Website for AstroGif",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
     "start": "serve build -s -c 1",
