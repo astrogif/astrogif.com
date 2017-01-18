@@ -1,0 +1,27 @@
+@import '~style/helpers';
+
+.download {
+	border: 1px solid @sky;
+	flex-grow: 1;
+	margin-right: 20px;
+	padding: 20px 0;
+}
+
+.download:last-child {
+	margin-right: 0;
+}
+
+.button {
+	min-width: 160px;
+}
+
+.icon path {
+	fill: @charred;
+}
+
+@media (max-width: 700px) {
+	.download {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}

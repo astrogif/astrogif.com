@@ -1,0 +1,88 @@
+@import '~style/helpers';
+
+@screenHeight: 210px;
+
+.container {
+	height: 230px;
+}
+
+.screen {
+	box-shadow: @free 0 0 10px 3px;
+	min-height: @screenHeight;
+	padding: 15px 15px 10px;
+	width: 330px;
+}
+
+.input {
+	background-color: @free;
+	height: 50px;
+	position: relative;
+	width: 100%;
+}
+
+.icon {
+	padding-top: 30px;
+}
+
+.mag {
+	left: 10px;
+	position:absolute;
+	top: 12px;
+}
+
+.mag path {
+	fill: @london;
+}
+
+.placeholder {
+	color: @london;
+	position: absolute;
+	font-size: 18px;
+	left: 50px;
+	top: 12px;
+}
+
+.searchText {
+	position: absolute;
+	font-size: 18px;
+	left: 50px;
+	top: 12px;
+}
+
+.blinker {
+	background-color: @charred;
+	display: inline-block;
+	height: 20px;
+	left: 49px;
+	position: absolute;
+	top: 15px;
+	width: 1px;
+}
+
+.textBlinker {
+	left: auto;
+	right: 0px;
+	top: 3px;
+}
+
+.gif {
+	margin-top: 10px;
+}
+
+
+@media (max-width: 350px) {
+	.screen {
+		min-height: 190px;
+		width: 250px;
+	}
+
+	.placeholder, .searchText {
+		font-size: 14px;
+		top: 15px;
+	}
+
+	.gif {
+		width: 220px;
+	}
+}
+

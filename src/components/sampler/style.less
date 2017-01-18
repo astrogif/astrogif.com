@@ -1,0 +1,32 @@
+@import '~style/helpers';
+
+@iconWidth: 100px;
+
+.sampler {
+	position: relative;
+	margin: 0 auto;
+	padding: 80px 0 0;
+	width: 330px;
+}
+
+.icon {
+	bottom: @iconWidth / 2 * -1;
+	height: @iconWidth;
+	position: absolute;
+	right: @iconWidth / 2 * -1;
+	width: @iconWidth;
+}
+
+@media (max-width: 500px) {
+	.icon {
+		bottom: @iconWidth / 4 * -1;
+		right: @iconWidth / 4 * -1;
+	}
+}
+
+@media (max-width: 350px) {
+	.sampler {
+		padding-top: 50px;
+		width: 250px;
+	}
+}
