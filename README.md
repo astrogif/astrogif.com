@@ -1,1 +1,1 @@
-# astrogif.github.io
+# astrogif.com
