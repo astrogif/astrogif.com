@@ -1,0 +1,17 @@
+[
+	{
+		"platform": "win",
+		"display": "Windows",
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.1.1/AstroGif.Setup.0.1.1.exe"
+	},
+	{
+		"platform": "mac",
+		"display": "Mac",
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.1.1/AstroGif-0.1.1.dmg"
+	},
+	{
+		"platform": "linux",
+		"display": "Linux",
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.1.1/AstroGif-linux-x64-0.1.1.tar.gz"
+	}
+]
