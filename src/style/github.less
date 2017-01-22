@@ -1,0 +1,25 @@
+.gc:hover .oa {
+    animation: ow 560ms ease-in-out
+}
+
+@keyframes ow {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+@media (max-width: 500px) {
+    .gc:hover .oa {
+        animation: none
+    }
+    .gc .oa {
+        animation: ow 560ms ease-in-out
+    }
+}

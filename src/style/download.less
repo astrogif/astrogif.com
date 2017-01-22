@@ -1,26 +1,35 @@
-@import '~style/helpers';
+.ds {
+	display: flex;
+}
 
-.download {
+@media (max-width: 700px) {
+	.ds {
+		flex-direction: column;
+	}
+}
+
+
+.dl {
 	border: 1px solid @sky;
 	flex-grow: 1;
 	margin-right: 20px;
 	padding: 20px 0;
 }
 
-.download:last-child {
+.dl:last-child {
 	margin-right: 0;
 }
 
-.button {
-	min-width: 160px;
-}
-
-.icon path {
+.dl__i path {
 	fill: @charred;
 }
 
+.d__b {
+	min-width: 160px;
+}
+
 @media (max-width: 700px) {
-	.download {
+	.dl {
 		margin-bottom: 20px;
 		margin-right: 0;
 	}
