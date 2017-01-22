@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import HtmlWebpackInlineSourcePlugin from 'html-webpack-inline-source-plugin';
 import autoprefixer from 'autoprefixer';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import ReplacePlugin from 'replace-bundle-webpack-plugin';
@@ -98,20 +99,22 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './index.ejs',
-			minify: { collapseWhitespace: true }
+			minify: { collapseWhitespace: true },
+			inlineSource: '.(css)$'
 		}),
 		new ScriptExtHtmlWebpackPlugin({
-		 	defaultAttribute: "async"
+			defaultAttribute: "async"
 		}),
 		new CopyWebpackPlugin([
 			{ from: './manifest.json', to: './' },
 			{ from: './favicon.ico', to: './' }
 		])
 	]).concat(ENV==='production' ? [
+
 		new V8LazyParseWebpackPlugin(),
 		new webpack.optimize.UglifyJsPlugin({
-		 	output: {
-		 		comments: false
+			output: {
+				comments: false
 			},
 			compress: {
 				warnings: false,
@@ -141,7 +144,8 @@ module.exports = {
 				events: true
 			},
 			publicPath: '/'
-		})
+		}),
+		new HtmlWebpackInlineSourcePlugin()
 	] : []),
 
 	stats: { colors: true },
