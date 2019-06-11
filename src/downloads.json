@@ -2,16 +2,16 @@
 	{
 		"platform": "win",
 		"display": "Windows",
-		"url": "https://github.com/astrogif/astrogif/releases/download/v0.2.6/astrogif-Setup-0.2.6.exe"
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.4.0/astrogif-Setup-0.4.0.exe"
 	},
 	{
 		"platform": "mac",
 		"display": "Mac",
-		"url": "https://github.com/astrogif/astrogif/releases/download/v0.2.6/astrogif-0.2.6.dmg"
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.4.0/astrogif-0.4.0.dmg"
 	},
 	{
 		"platform": "linux",
 		"display": "Linux",
-		"url": "https://github.com/astrogif/astrogif/releases/download/v0.2.6/astrogif-0.2.6-x86_64.AppImage"
+		"url": "https://github.com/astrogif/astrogif/releases/download/v0.4.0/astrogif-0.4.0-x86_64.AppImage"
 	}
 ]

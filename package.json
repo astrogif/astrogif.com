@@ -1,14 +1,14 @@
 {
   "name": "astrogif.com",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Website for AstroGif",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
     "start": "serve build -s -c 1",
-    "prestart": "npm run build",
+    "prestart": "yarn build",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
     "prebuild": "mkdirp build && ncp src/assets build/assets",
-    "test": "npm run -s lint && npm run -s test:karma",
+    "test": "yarn -s lint && yarn -s test:karma",
     "test:karma": "karma start test/karma.conf.js --single-run",
     "lint": "eslint {src,test}"
   },
